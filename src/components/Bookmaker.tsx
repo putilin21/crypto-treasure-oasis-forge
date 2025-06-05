@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -6,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Trophy, Football, Calendar, TrendingUp, Target, Timer } from "lucide-react";
+import { Trophy, Calendar, TrendingUp, Target, Timer } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Bookmaker = () => {
@@ -115,7 +114,7 @@ const Bookmaker = () => {
       <Tabs defaultValue="sports" className="w-full">
         <TabsList className="grid w-full grid-cols-3 bg-slate-800/50 border border-slate-700">
           <TabsTrigger value="sports">
-            <Football className="w-4 h-4 mr-2" />
+            <Trophy className="w-4 h-4 mr-2" />
             Спорт
           </TabsTrigger>
           <TabsTrigger value="crypto">
